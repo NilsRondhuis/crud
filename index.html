@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <h1>My Admin Tools</h1>
+
+    <div class="container">
+        <div class="container-forms">
+            <h2 class="title">1) Add new user</h2>
+
+            <form action="#" class="form" id="formAdd">
+                <div class="fieldset">
+                    <label class="label" for="name">
+                        <span class="label-title">Name</span>
+                        <input class="input" type="text" id="name" name="name">
+                    </label>
+                    <label class="label" for="lastname">
+                        <span class="label-title">Lastname</span>
+                        <input class="input" type="text" id="lastname" name="lastname">
+                    </label>
+                </div>
+                <label class="label" for="email">
+                    <span class="label-title">Email</span>
+                    <input class="input" type="email" id="email" name="email">
+                </label>
+                <button class="btn form-btn">Submit</button>
+            </form>
+
+            <h2 class="title">2) Update user</h2>
+
+            <form action="#" class="form" id="formUpdate">
+                <div class="fieldset">
+                    <label class="label" for="idUpdate">
+                        <span class="label-title">ID</span>
+                        <input class="input" type="text" id="idUpdate" name="id">
+                    </label>
+                    <label class="label" for="nameUpdate">
+                        <span class="label-title">Name</span>
+                        <input class="input" type="text" id="nameUpdate" name="name">
+                    </label>
+                    <label class="label" for="lastnameUpdate">
+                        <span class="label-title">Lastname</span>
+                        <input class="input" type="text" id="lastnameUpdate" name="lastname">
+                    </label>
+                </div>
+                <label class="label" for="emailUpdate">
+                    <span class="label-title">Email</span>
+                    <input class="input" type="email" id="emailUpdate" name="email">
+                </label>
+                <button class="btn form-btn">Submit</button>
+            </form>
+
+            <h2 class="title">3) Delete user</h2>
+
+            <form action="#" class="form" id="formDelete">
+                <label class="label" for="idDelete">
+                    <span class="label-title">ID</span>
+                    <input class="input" type="text" id="idDelete" name="id">
+                </label>
+                <button class="btn form-btn">Submit</button>
+            </form>
+
+        </div>
+        <div class="container-users">
+            <button type="submit" class="btn show-btn">Show</button>
+
+            <ul class="list list-user">
+                
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/fetch.js" type="module"></script>
+</body>
+</html>

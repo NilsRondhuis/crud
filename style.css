@@ -1,0 +1,81 @@
+body {
+    padding: 20px;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    display: flex;
+}
+.container-forms,
+.container-users {
+    width: 50%;
+}
+.title {
+    margin: 0 0 20px 0;
+    color: #89a165;
+}
+.form {
+    margin-bottom: 20px;
+    width: 500px;
+}
+.form .label {
+    margin-bottom: 10px;
+}
+.fieldset {
+    display: flex;
+    margin-bottom: 10px;
+}
+#formAdd .fieldset .label {
+    width: 100%;
+}
+#formUpdate .fieldset .label {
+    width: 32%;
+}
+.fieldset .label:not(:last-child) {
+    margin-right: 10px;
+}
+.label {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+}
+.label-title {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.input {
+    padding: 5px;
+    border: 2px solid #88b788;
+    border-radius: 6px;
+}
+.btn {
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: wheat;
+    background-color: #779d77;
+    border: 1px solid green;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-btn {
+    width: 100%;
+}
+.show-btn {
+    margin-left: auto;
+}
+.list-user .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.user-info {
+    margin: 0;
+}
+.user-desc {
+    font-weight: 700;
+}
